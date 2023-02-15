@@ -1,0 +1,75 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+:root{
+--h1: #e71212;   
+--h2: #0bf7b4;  
+--h3: #764086;  
+--h4: #e712e7;  
+--h5: #12b5e7;  
+--h6: #e0e712;  
+--color1: #3ec929;
+--color2: #663399;
+--base:#a9a9a9;
+--white:#ffffff;
+--black:#000000;
+
+}
+
+form{
+    background-color: #0e78d5;
+    width: fit-content;
+    margin: 10px;
+    padding: 10px;
+    border: solid 3px #0065bc;
+    border-radius: 12px;
+}
+
+body{
+    text-align: center;
+    font: italic 31px/31px 'Babylonica', cursive;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    color:var(--white);
+ 
+
+}
+
+legend{
+    font: italic 18px/28px'Tourney', cursive;
+    text-decoration: overline underline solid;
+    color:var(--white);
+}
+
+fieldset{
+    border-radius: 16px;
+    border: solid 3px var(--white);
+}
+
+#submit{
+    font: bold italic 24px/28px 'Babylonica', cursive;
+    color: blue;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 8px;
+    border: solid 1px var(--white);
+    margin: 14px;
+    border-radius: 9px;
+}
+
+#submit:hover{
+    background-color:blue;
+    color:  var(--white);
+    
+}
+
+a{
+    color:var(--black);
+}
+
+a:hover{
+  color: var(--white);
+  font-size:25px;
+}
