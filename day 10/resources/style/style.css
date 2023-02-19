@@ -1,0 +1,177 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Sans Andreas";
+    src: url(sans-andreas-font/SansAndreasDemoItalic-OVeV8.ttf);
+}
+
+@font-face {
+    font-family: "Sans Andreas Bold";
+    src: url(sans-andreas-font/SansAndreasDemoBoldItalic-Ea7az.ttf);
+}
+:root{
+--h1: #e71212;   
+--h2: #0bf7b4;  
+--hover: #690587;  
+--h4: #e712e7;  
+--h5: #12b5e7;  
+--red: #df287a;  
+--blue: #2644d9;
+--black: #0c0117;
+--base:#e3e1e1;
+--white:#ffffff;
+--black:#000000;
+--sansAndreas: "Sans Andreas",'Courier New', Courier, monospace;
+--sansAndreasBold: "Sans Andreas Bold",'Courier New', Courier, monospace;
+
+}
+
+body{
+    font-family: var(--sansAndreas);
+    
+}
+p{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 30px;
+    font-family: var(--sansAndreasBold);
+}
+
+.bannerCard{
+    padding: 40px;
+    border: 1px solid var(--blue);
+}
+
+.bannerCard > div {
+        overflow: hidden;
+        width: 49%;
+        display: inline-block;
+        box-sizing: border-box;
+}
+
+.bannerCard > div img{
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.bannerCard__textContainer{
+
+    padding: 2% 0 0 7%;
+    vertical-align: top;
+
+}
+
+.bannerCard__textContainer h3{
+    color:var(--blue)
+}
+
+h3 ~ ul{
+    padding: 2% 0 0 4%;
+    list-style-type: none;
+    padding: 0;
+  margin: 0;
+
+}
+
+h3 ~ ul li{
+    line-height: 28px;
+    font-size: 20px;
+    background: url('../images/check.png') no-repeat left center;
+    padding: 5px 10px 5px 25px;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+    background-size: 20px 20px;
+    background-position-y: 16px;
+
+   
+}
+
+li a{
+    color:var(--black);
+}
+
+li a:hover{
+    padding-left: 3%;
+    color:var(--hover);
+   
+}
+
+h3 ~ a{
+    padding: 13px 19px;
+    margin: 1% 0 0 0;
+    display: inline-block;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 30px;
+}
+
+h3 ~ a:hover{
+    
+    background-color: var(--hover);
+    color: var(--white);
+    border-radius: 30px;
+}
+ul{
+    
+    list-style-image: url('');
+
+
+}
+
+/* Assignment 2 */
+
+.cardSection{
+    padding:2%;
+    border: 1px solid var(--blue);
+}
+
+.cardSection__card{
+    display: inline-block;
+    margin: 7px;
+    width: 32%;
+    background-color: var(--base);
+    border: 1px solid var(--black);
+    border-radius: 2px;
+}
+
+.cardSection__imageCntainer{
+    display: flex;
+    justify-content: center;
+    border-radius: 22px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.cardSection__imageCntainer img{
+    
+    min-width: 100%;
+    min-height: 100%
+}
+
+.cardSection__card h5{
+    box-sizing: border-box;
+    display: inline-block;
+    padding-left: 4px;
+    font-size: 15px;
+    width: 48%;
+    text-align: left;
+    color:var(--red);
+}
+.cardSection__card h5+p{
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 4px;
+    font-size: 15px;
+    width: 50%;
+    text-align: right;
+}
+.cardSection__card p+p{
+    font-size: 12px;
+    padding: 7px 20px;
+}
