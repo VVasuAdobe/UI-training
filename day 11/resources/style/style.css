@@ -1,0 +1,102 @@
+*{
+    padding:0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: "Sans Andreas";
+    src: url(sans-andreas-font/SansAndreasDemoItalic-OVeV8.ttf);
+}
+
+@font-face {
+    font-family: "Sans Andreas Bold";
+    src: url(sans-andreas-font/SansAndreasDemoBoldItalic-Ea7az.ttf);
+}
+:root{  
+--red: #df287a;  
+--blue: #2644d9;
+--black: #0c0117;
+--base:#e3e1e1;
+--white:#ffffff;
+--black:#000000;
+--sansAndreas: "Sans Andreas",'Courier New', Courier, monospace;
+--sansAndreasBold: "Sans Andreas Bold",'Courier New', Courier, monospace;
+
+}
+
+.cardSection{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.cardSection>:last-child{
+    padding: 20px 0;
+
+}
+
+.cardSection>:first-child{
+    text-align: center;
+}
+
+
+.cardSection>:first-child > h3{
+    font-size: 27px;
+    padding-bottom: 10px;
+}
+
+h3 + p{
+    padding-bottom: 10px;
+}
+
+.aboutMe{
+    padding: 10px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.aboutMe >p{
+    text-align: justify;
+}
+
+.portfolio{
+    padding: 10px;
+    
+}
+.portfolio >div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+
+}
+.portfolio >h4{
+    margin-bottom: 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .portfolio > div > div{
+        margin-bottom: 20px;
+    
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    
+    .cardSection {
+
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+    .portfolio > div > div{
+        margin-bottom: 25px;
+    
+    }
+
+}
