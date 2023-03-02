@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jaascript Assignment</title>
+        <link rel="stylesheet" href="resources/style/style.css">
+    </head>
+    <body>
+        <h1>Item Calculator</h1>
+        <form id="inputForm">
+            <fieldset>  
+                <legend> Input Form</legend>
+                    <div>
+                        <label> Item Name </label>
+                        <input type="text"  aria-label="Enter the item name" name="name" placeholder="Enter the item name" required/>
+                    </div>
+                    <div>
+                        <label> Item Price</label>
+                        <input type="text" placeholder="enter the item price" name="price" aria-label="enter the item price" required/>
+                    </div>
+                <input type="submit" id="submit"  aria-label="submit"/>
+            </fieldset>     
+        </form>
+
+        <fieldset>  
+            <legend> Output</legend>
+            <p id="output"></p>    
+            
+        </fieldset> 
+        
+    <script src="resources/script/script.js"></script>
+   </body>
+</html>
