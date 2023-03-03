@@ -1,19 +1,26 @@
 body{
-  background-color: #adb1b2;
   text-align: center;
 }
 
-#inputForm{
-  display: block;
-  width: 500px;
+fieldset{
+  background-color: #cbcbcb;
   margin: auto;
+  width: 500px;
+   border-radius: 20px;
+   margin-bottom: 10px;
 }
 
-form + fieldset{
-  display: block;
-    width: 500px;
-    margin: auto;
+fieldset > fieldset {
+
+  width: 450px;
+
 }
+
+fieldset > legend{
+  font-size: 19px;
+  font-weight: bold;
+}
+
 
 form input {
     border: 0;
@@ -31,4 +38,38 @@ input[type=submit]{
 fieldset > p {
   font-size: 20px;
   color:whitesmoke;
+}
+
+#spetCounter{
+  display: grid;
+  grid-template-columns: 180px 320px;
+}
+
+#spetCounter >div{
+  overflow: hidden;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+#spetCounter >div >img{
+  height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#spetCounter >div + div{
+  padding: 0 16px;
+    text-align: justify;
+}
+
+#spetCounter input{
+    width: 25px;
+    text-align: center;
+}
+#spetCounter button{
+  border-radius: 13px;
+}
+#decrement{
+  margin-right: 4px;
 }

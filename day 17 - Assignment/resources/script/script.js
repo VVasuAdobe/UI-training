@@ -3,11 +3,16 @@ const $ = document;
 const SUBMIT =  $.getElementById("submit");
 const MYFORM  = $.getElementById("inputForm").elements;
 const PRINTMESSAGE = $.getElementById("output");
+const DEECREMENT = $.getElementById("decrement");
+const INCREMENT = $.getElementById("increment"); 
+const COUNT = $.getElementById("count");
 
 SUBMIT.addEventListener("click",function(event){
     event.preventDefault();
     FORMSUBMIT();
 });
+
+
 
 const FORMSUBMIT = () =>{
     
@@ -35,8 +40,49 @@ let getValueByName =(name)=>{
  return value;
 }
 
+
 let printMessage = (productName,productPrice) =>{
     let message = `You have selected the product: ${productName} of price ${productPrice} !`;
     PRINTMESSAGE.innerHTML = message;
 }
 
+let getIntCount = () => {
+    let count = convertToNumber(COUNT.value); 
+    return count;
+}
+
+let decrement = (count) => {
+
+    if(count <= 0){
+        console.log("not possibele")
+    }
+    else{
+        count -= 1;
+        pusToCount(count);
+    }
+}
+
+let increment = (count) => {
+
+    if(count >= 100){
+        console.log("not possibele")
+    }
+    else{
+        count += 1;
+        pusToCount(count);
+    }
+}
+
+let pusToCount = (count) =>{
+    COUNT.value = count;
+}
+
+DEECREMENT.addEventListener("click",function(){
+    decrement(getIntCount());
+  
+});
+
+INCREMENT.addEventListener("click",function(){
+    increment(getIntCount());
+  
+});

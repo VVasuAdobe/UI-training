@@ -19,14 +19,27 @@
                         <input type="text" placeholder="enter the item price" name="price" aria-label="enter the item price" required/>
                     </div>
                 <input type="submit" id="submit"  aria-label="submit"/>
+
+                <fieldset>  
+                    <legend> Output</legend>
+                    <p id="output"></p>    
+                    
+                </fieldset> 
             </fieldset>     
         </form>
 
-        <fieldset>  
-            <legend> Output</legend>
-            <p id="output"></p>    
-            
-        </fieldset> 
+        
+
+        <fieldset id="spetCounter">  
+            <legend> Step Counter</legend>
+                <div>
+                    <img src="https://picsum.photos/640/360" alt="product image"/>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum lorem urna, non aliquet eros eleifend quis. Ut consequat diam et posuere consequat. Donec non risus sit amet tellus blandit gravida ac nec dolor. Aliquam</p>
+                    <button id="decrement">-</button><input type="text" id="count"  aria-label="count" name="count" value="1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  disabled/> <button id="increment">+</button>
+                </div>
+        </fieldset>     
         
     <script src="resources/script/script.js"></script>
    </body>
